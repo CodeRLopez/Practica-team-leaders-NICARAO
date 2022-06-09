@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+.main-nav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    background: rgb(1,1,9);
+    background: linear-gradient(156deg, rgba(1,1,9,1) 36%, rgba(4,13,52,1) 82%);
+    border-top: 2px solid #fff;
+}
+
+.main-nav .logo {
+    width: 300px; 
+    height: 50px;
+    margin-top: 20px;
+    background-image: url('./assets/logo-nicarao-agency.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-nav .navigation {
+    display: flex;
+    width: 380px; 
+    padding-top: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.navigation h3 {
+    color:rgb(16, 16, 196);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+ .navigation a:hover {
+    border-bottom: 1px solid #fff;
+} 
+
+
+
+
+@media (max-width: 768px){
+
+    .navigation {
+       flex-direction: row-reverse; 
+    }
+
+    .main-nav .navigation {
+        width: 50px;
+    }
+    
+    .navigation h3 {
+        display: none;
+    }
+
+    .navigation .logo-menu {
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+        background-image: url('./assets/burgen-button-icon.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+    .main-nav .logo {
+        width: 150px;
+        margin-left: 25px;
+    }
+
+    .navigation .logo-menu {
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+    }
+}
